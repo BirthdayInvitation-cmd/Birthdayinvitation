@@ -32,7 +32,6 @@ body {
   background: transparent !important;
   color: #000 !important;
 }
-/* ===== НАСТРОЙКА ФОНА И ТЕКСТА ===== */
 
 body {
   background-image: url("./WhatsApp Image 2026-11-01 at 11.29.29.jpeg") !important;
@@ -42,13 +41,11 @@ body {
   color: #000;
 }
 
-/* Убираем фиолетовый фон первой секции */
 .hero {
   background: transparent !important;
   color: #000 !important;
 }
 
-/* Чёрный текст первой части */
 .hero-card,
 .hero h1,
 .hero-name,
@@ -104,16 +101,63 @@ input::placeholder {
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(0, 0, 0, 0.2);
 }
+/* ===== GOLDEN TEXT THEME ===== */
+
 body,
-body * {
+body *,
+body *::before,
+body *::after {
     color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
 }
 
+/* Elegant golden glow */
 body * {
     text-shadow: 0 0 3px rgba(212, 175, 55, 0.15);
 }
 
+/* Headings */
+h1, h2, h3, p, span, label {
+    color: #D4AF37 !important;
+}
+
+/* Buttons */
 button,
-.button {
-    color: #1a1420 !important;
+.button,
+.submit {
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
+    border-color: rgba(212, 175, 55, 0.6);
+}
+
+/* Input fields */
+input,
+select,
+textarea {
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
+    caret-color: #D4AF37;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: rgba(212, 175, 55, 0.7) !important;
+    -webkit-text-fill-color: rgba(212, 175, 55, 0.7) !important;
+}
+
+/* Dropdown options */
+select option {
+    color: #D4AF37 !important;
+    background: #241629 !important;
+}
+
+/* Success message */
+.success {
+    color: #D4AF37 !important;
+}
+
+/* Footer */
+footer {
+    color: #D4AF37 !important;
 }
