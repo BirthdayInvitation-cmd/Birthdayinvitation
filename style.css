@@ -104,3 +104,16 @@ input::placeholder {
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(0, 0, 0, 0.2);
 }
+body,
+body * {
+    color: #D4AF37 !important;
+}
+
+body * {
+    text-shadow: 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+button,
+.button {
+    color: #1a1420 !important;
+}
