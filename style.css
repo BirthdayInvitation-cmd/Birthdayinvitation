@@ -169,3 +169,37 @@ footer {
 
 .hero-card h1 span {
     font-size: inherit !important
+
+  /* FIXED BACKGROUND FOR ALL DEVICES */
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background: none !important;
+    position: relative;
+    isolation: isolate;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background-image: url("./WhatsApp Image 2026-11-01 at 17.10.33.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+}
+
+/* Mobile optimization */
+@media (max-width: 700px) {
+    body::before {
+        background-size: cover;
+        background-position: center center;
+    }
+}
