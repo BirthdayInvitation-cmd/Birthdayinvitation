@@ -161,6 +161,11 @@ select option {
 footer {
     color: #D4AF37 !important;
 }
-.hero h1 {
-    font-size: clamp(50px, 9vw, 130px) !important;
+/* Reduce birthday title size */
+.hero-card h1 {
+    font-size: clamp(50px, 9vw, 110px) !important;
+    line-height: 0.9 !important;
 }
+
+.hero-card h1 span {
+    font-size: inherit !important
