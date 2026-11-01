@@ -161,3 +161,6 @@ select option {
 footer {
     color: #D4AF37 !important;
 }
+.hero h1 {
+    font-size: clamp(50px, 9vw, 130px) !important;
+}
